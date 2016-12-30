@@ -1,0 +1,298 @@
+/* Définition des polices personnalisées */
+@font-face
+{
+	font-family: 'dancing_script_ot_regular';
+	src: url('polices/DancingScript-Regular.otf') format('otf');
+	src: url('polices/dancingcript-regular-webfont.woff2') format('woff2');
+	src: url('polices/dancingscript-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face
+{
+	font-family: 'WorstveldSling';
+	src: url('polices/webfonts/32BF69_0_0.eot');
+	src: url('polices/webfonts/32BF69_0_0.eot?#iefix') format('embedded-opentype');
+	src: url('polices/webfonts/32BF69_0_0.woff2') format('woff2'),url('webfonts/32BF69_0_0.woff') format('woff');
+	src: url('polices/webfonts/32BF69_0_0.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+/* Elements principaux de la page */
+body 
+{
+	background-image: url("images/vintage_background/37219-O15PA3.jpg");
+	background-attachment: fixed; 
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0;
+	font-family: 'WorstveldSling';
+	color: rgb(0,0,0);
+}
+
+#bloc_page
+{
+	width: 900px;
+	margin: auto;
+}
+
+
+/* Header */
+
+header
+
+{
+	width: 900px;
+	height: 180px;
+	border-bottom: 2px rgba(83,4,3,0.5) solid;
+	background-image: url("images/logo/logo_wild_circus_mini.png");
+	background-repeat: no-repeat;
+	background-position: left;
+
+}
+
+#titre_principal 
+{
+	font-family: 'dancing_script_ot_regular', serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 0px;
+	height: 130px;
+	color: rgb(223,46,106);
+}
+
+#logo
+{
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+}
+
+#logo img
+{
+	width: 200px;
+	height: 150px;
+}
+
+
+/* Navigation */
+
+#navigation
+{
+	height: 60px;
+	width: 600px;
+	float: right;
+}
+
+nav ul
+{
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+}
+
+nav li
+{
+	margin-right: 15px;
+}
+
+nav a /* Liens par défaut (non survolés) */
+{
+	font-size: 1.7em;
+	font-weight: bold;
+	color: rgb(223,46,106);
+	padding-bottom: 3px;
+	text-decoration: none;
+}
+
+nav a:hover /* Apparence au survol des liens */
+{
+	color: rgb(153,22,71);
+	border-bottom: 3px solid #760001;
+}
+
+a:visited /* Quand le visiteur a déjà vu la page concernée */
+{
+	color: #6C6B7F; /* Appliquer une couleur grise */
+}
+
+/* Bannière */
+
+
+#banniere_image
+{
+	margin-top: 15px;
+	height: 200px;
+	border-radius: 5px;
+	background: url('images/banniere/panoramique_la_bourse.jpg') no-repeat;
+	position: relative;
+	box-shadow: 0px 4px 4px #1c1a19;
+	margin-bottom: 25px;
+}
+
+#banniere_description
+{
+	position: absolute;
+	bottom: 0;
+	border-radius: 0px 0px 5px 5px;
+	width: 99.5%;
+	height: 20px;
+	padding-top: 6px;
+	padding-left: 4px;
+	background-color: rgba(24,24,24,0.7);
+	color: rgb(173,186,175);
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+
+
+/* Corps */
+
+section
+{
+	width: 65%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+	float: left;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+section h1, h2
+
+{
+	font-family: 'dancing_script_ot_regular', serif;
+	font-weight: bold;
+	font-size: 1.9em;
+	color: rgb(153,22,71);
+	margin-top: 0px;
+}
+
+
+aside
+{
+	position: relative;
+	width: 30%;
+	text-align: justify;
+	background-color: #706b64;
+	box-shadow: 0px 2px 5px #1c1a19;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 35px;
+	color: rgb(254,190,66);
+	font-size: 1.3em;
+	font-weight: bold;
+	float: left;
+}
+
+aside h3
+{
+	text-align: center;
+	font-family: 'dancing_script_ot_regular', serif;
+	font-weight: bold;
+	font-size: 1.6em;
+	color: rgb(254,190,66);
+}
+
+
+#photo_chapiteau, #photo_acrobats, #photo_olivia, #photo_sam, #photo_horses
+{
+	text-align: center;
+}
+
+#home
+{
+	height: 650px;
+}
+
+#acrobats
+{
+	height: 300px;
+}
+
+#clown
+{
+	height: 300px;
+}
+
+#fire-eater
+{
+	height: 300px;
+}
+
+#horses
+
+{
+	height: 300px;
+}
+
+
+#rate
+{
+	height: 250px;
+	margin-bottom: 80px;
+}
+
+.fleche_bulle
+{
+	position: absolute;
+	top: 120px;
+	left: -10px;
+}
+
+
+/* Footer */
+
+footer
+{
+	display: flex;
+	border-top: 2px rgba(83,4,3,0.5) solid;
+	background: url('images/symbole/ico_top.png') no-repeat top center; 
+	padding-top: 25px;
+	clear: both;
+}
+
+footer p, footer ul
+{
+	font-size: 1.4em;
+	font-weight: bold;
+	text-align: left;
+}
+
+footer h1
+{
+	font-size: 1.6em;
+	font-weight: bold;
+	color: rgb(223,46,106);
+	text-transform: uppercase;
+	margin-left: 140px;
+}
+
+#Tour
+{
+	width: 65%;
+	margin-left: 10px;
+	margin-top: -20px;
+}
+
+
+
+#Citation
+{
+	width: 35%;
+	margin-right: 50px;
+}
+
+#Citation p
+{
+	font-family: 'dancing_script_ot_regular', serif;
+	font-size: 1.3em;
+	font-weight: normal;
+	text-align: justify;
+}
